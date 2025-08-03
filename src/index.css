@@ -17,24 +17,31 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* PSQ/PAY Brand Colors - Blue to Red/Pink Gradient */
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 200 100% 60%;
+    --primary-dark: 220 100% 40%;
 
-    --secondary: 210 40% 96.1%;
+    /* Brand Gradient Values */
+    --brand-start: 210 100% 50%;  /* Blue */
+    --brand-end: 350 85% 60%;     /* Red/Pink */
+
+    --secondary: 210 20% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 20% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 200 100% 95%;
+    --accent-foreground: 210 100% 50%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 210 100% 50%;
 
     --radius: 0.5rem;
 
@@ -101,5 +108,21 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* PSQ/PAY Brand Gradients */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, hsl(var(--brand-start)), hsl(var(--brand-end)));
+  }
+
+  .text-brand-gradient {
+    background: linear-gradient(135deg, hsl(var(--brand-start)), hsl(var(--brand-end)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-brand-gradient {
+    border-image: linear-gradient(135deg, hsl(var(--brand-start)), hsl(var(--brand-end))) 1;
   }
 }
