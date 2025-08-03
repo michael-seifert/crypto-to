@@ -59,7 +59,7 @@ const Index = () => {
                 <CardDescription>Redirect customers to our secure payment page</CardDescription>
               </CardHeader>
               <CardContent>
-                <code className="bg-accent p-3 rounded text-sm block">
+                <code className="bg-accent p-3 rounded text-sm block break-all">
                   https://pay.psq.dev/checkout/...
                 </code>
               </CardContent>
