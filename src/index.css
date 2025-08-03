@@ -17,15 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* PSQ/PAY Brand Colors - Blue to Red/Pink Gradient */
-    --primary: 210 100% 50%;
+    /* PSQ/PAY Brand Colors - Red, White, Blue */
+    --primary: 220 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 200 100% 60%;
+    --primary-light: 220 100% 60%;
     --primary-dark: 220 100% 40%;
 
-    /* Brand Gradient Values */
-    --brand-start: 210 100% 50%;  /* Blue */
-    --brand-end: 350 85% 60%;     /* Red/Pink */
+    /* Brand Gradient Values - Red, White, Blue */
+    --brand-start: 220 100% 50%;  /* Blue */
+    --brand-end: 0 100% 50%;      /* Red */
+    --brand-accent: 0 0% 100%;    /* White */
 
     --secondary: 210 20% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
